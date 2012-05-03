@@ -1,0 +1,68 @@
+// ==========================
+//
+// File icon with page curl
+//		using LessCSS and CSS
+// 		by Jason Robb
+// 		http://jasonrobb.com
+//
+// ==========================
+
+
+// Basic styles
+body {
+	background-color: #ccc;
+	margin: 0 auto;
+	padding: 3em;
+	}
+
+
+// Mixin for file icon
+.file(@startColor: #fff, @midColor: #eee, @colorStop: 50%, @midColor2: #ccc, @colorStop2: 80%, @midColor3: #aaa, @colorStop3: 89%, @endColor: #fff, @deg: -50deg) {
+	background-color: @endColor;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(@deg, @startColor, @midColor @colorStop, @midColor2 @colorStop2, @midColor3 @colorStop3, @endColor);
+	background-image: -ms-linear-gradient(@deg, @startColor, @midColor @colorStop, @midColor2 @colorStop2, @midColor3 @colorStop3, @endColor);
+	background-image: -webkit-linear-gradient(@deg, @startColor, @midColor @colorStop, @midColor2 @colorStop2, @midColor3 @colorStop3, @endColor);
+	background-image: -o-linear-gradient(@deg, @startColor, @midColor @colorStop, @midColor2 @colorStop2, @midColor3 @colorStop3, @endColor);
+	background-image: linear-gradient(@deg, @startColor, @midColor @colorStop, @midColor2 @colorStop2, @midColor3 @colorStop3, @endColor);
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+	}
+
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	box-shadow: @shadow;
+	}
+
+// Single file
+.file span {
+	background-color: white;
+	.file(#fcfcfc, #f2f2f2, 78%, #d6d6d6, 84%, #dbdbdb, 90%, #e0e0e0, -65deg);
+	@shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.9), 3px 3px 3px rgba(0, 0, 0, 0.1), 3px 0 3px rgba(255, 255, 255, 0.1), 0 3px 3px rgba(255, 255, 255, 0.1);
+	.box-shadow(@shadow);
+	color: rgba(0, 0, 0, 0.3);
+	clear: both;
+	display: inline-block;
+	font-size: 24px;
+	height: 30px;
+	padding: 0;
+	padding-top: 10px;
+	width: 32px;
+	text-align: center;
+	}
+
+// Stack of files
+.stack span:nth-child(1) {
+	margin-bottom: 8px;
+	margin-left: 8px;
+	}
+
+.stack span:nth-child(2) {
+	margin-bottom: 4px;
+	margin-left: -40px;
+	}
+	
+.stack span:nth-child(3) {
+	margin-bottom: 0;
+	margin-left: -40px;
+	}

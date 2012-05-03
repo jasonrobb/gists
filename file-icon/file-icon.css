@@ -1,0 +1,40 @@
+body {
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 3em;
+}
+.file span {
+  background-color: white;
+  background-color: #e0e0e0;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(-65deg, #fcfcfc, #f2f2f2 78%, #d6d6d6 84%, #dbdbdb 90%, #e0e0e0);
+  background-image: -ms-linear-gradient(-65deg, #fcfcfc, #f2f2f2 78%, #d6d6d6 84%, #dbdbdb 90%, #e0e0e0);
+  background-image: -webkit-linear-gradient(-65deg, #fcfcfc, #f2f2f2 78%, #d6d6d6 84%, #dbdbdb 90%, #e0e0e0);
+  background-image: -o-linear-gradient(-65deg, #fcfcfc, #f2f2f2 78%, #d6d6d6 84%, #dbdbdb 90%, #e0e0e0);
+  background-image: linear-gradient(-65deg, #fcfcfc, #f2f2f2 78%, #d6d6d6 84%, #dbdbdb 90%, #e0e0e0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e0e0e0', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.9), 3px 3px 3px rgba(0, 0, 0, 0.1), 3px 0 3px rgba(255, 255, 255, 0.1), 0 3px 3px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.9), 3px 3px 3px rgba(0, 0, 0, 0.1), 3px 0 3px rgba(255, 255, 255, 0.1), 0 3px 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.9), 3px 3px 3px rgba(0, 0, 0, 0.1), 3px 0 3px rgba(255, 255, 255, 0.1), 0 3px 3px rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+  clear: both;
+  display: inline-block;
+  font-size: 24px;
+  height: 30px;
+  padding: 0;
+  padding-top: 10px;
+  width: 32px;
+  text-align: center;
+}
+.stack span:nth-child(1) {
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+.stack span:nth-child(2) {
+  margin-bottom: 4px;
+  margin-left: -40px;
+}
+.stack span:nth-child(3) {
+  margin-bottom: 0;
+  margin-left: -40px;
+}
