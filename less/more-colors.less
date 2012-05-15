@@ -1,0 +1,231 @@
+// ============================
+// More-Colors.less - for index
+// ============================
+
+
+@import "colors.less"; // because it's always needed!
+
+
+// Color variables
+@green:		#4dbfa4;
+@red:		#c33;
+@blue:		#09c;
+@yellow:	#fd0;
+
+
+// Grid of colors
+.more-colors {
+	
+	.download div a {
+		//background-image: url("../assets/icons/coda-less.png");
+		}
+	
+	.example span {
+		float: left;
+		clear: none;
+		}
+
+	.grid {
+		background-color: @gray50;
+		height: 230px;
+		overflow: hidden;
+		width: 100%;
+		
+		div {
+			float: left;
+			height: 230px;
+			width: 10%;
+			}
+			
+		div div {
+			float: left;
+			margin-top: 20px;
+			height: 200px;
+			width: 50%;
+			}
+		
+		span {
+			display: block;
+			height: 50px;
+			width: 105%;
+			}
+		}
+	}
+	
+	
+// Briefly
+.briefly div {
+	float: left;
+	margin-right: 5%;
+	width: 45%;
+	}
+
+.briefly {
+		
+	.grid {
+		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.03);
+		-moz-box-shadow: 	0 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.03);
+		box-shadow: 		0 1px 0 rgba(0, 0, 0, 0.05), 0 2px 5px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.03);
+		-webkit-border-radius: 	3px;
+		-moz-border-radius: 	3px;
+		border-radius: 			3px;
+		margin-top: 1em;
+		margin-right: 0;
+		padding: 0 0 12px;
+		overflow: hidden;
+		width: 100%;
+		
+		div {
+			background-color: transparent;
+			-webkit-border-radius: 	3px;
+			-moz-border-radius: 	3px;
+			border-radius: 			3px;
+			height: 50px;
+			margin: 10px 0;
+			padding: 0 5%;
+			overflow: hidden;
+			width: 90%;
+			
+			span {
+				display: block;
+				float: left;
+				font-size: 12px;
+				padding-top: 5px;
+				height: 45px;
+				width: 20%;
+				text-indent: 5px;
+				text-shadow: 0 1px 0 @white20;
+				}
+			}
+		
+		.swatch {
+			padding: 7px 5% 0;
+			text-shadow: 0 1px 0 @white20;
+			height: 25px;
+			width: 90%;
+			}
+		}
+	}
+
+
+// White example
+.white { 	background-color: @white; }
+.white1 { 	background-color: @white10; }
+.white2 { 	background-color: @white20; }
+.white3 { 	background-color: @white30; }
+.white4 { 	background-color: @white40; }
+.white5 { 	background-color: @white50; }
+.white6 { 	background-color: @white60; }
+.white7 { 	background-color: @white70; }
+.white8 { 	background-color: @white80; }
+.white9 { 	background-color: @white90; }
+
+// Black example
+.black { 	background-color: @black; }
+.black1 { 	background-color: @black10; }
+.black2 { 	background-color: @black20; }
+.black3 { 	background-color: @black30; }
+.black4 { 	background-color: @black40; }
+.black5 { 	background-color: @black50; }
+.black6 { 	background-color: @black60; }
+.black7 { 	background-color: @black70; }
+.black8 { 	background-color: @black80; }
+.black9 { 	background-color: @black90; }
+
+// Gray example
+.gray { 	background-color: @gray50; padding-top: 20px; }
+.gray1 { 	background-color: @gray10; color: @white90; }
+.gray2 { 	background-color: @gray20; color: @white90; }
+.gray3 { 	background-color: @gray30; color: @white90; }
+.gray4 { 	background-color: @gray40; color: @white90; }
+.gray5 { 	background-color: @gray55; color: @white90; }
+.gray6 { 	background-color: @gray60; }
+.gray7 { 	background-color: @gray70; }
+.gray8 { 	background-color: @gray80; }
+.gray9 { 	background-color: @gray90; }
+.gray97 { 	background-color: @gray97; }
+
+// Color examples
+.red {
+	background-color: #c33;
+	padding-top: 10px;
+	}
+
+.orange {
+	background-color: spin(#ffd000, -20);
+	padding-top: 20px;
+	}
+
+.yellow {
+	background-color: #ffd000;
+	padding-top: 30px;
+	}
+
+.lime {
+	background-color: spin(#4dbfa4, -40);
+	padding-top: 40px;
+	}
+
+.green {
+	background-color: #4dbfa4;
+	padding-top: 30px;
+	}
+
+.blue {
+	background-color: #09c;
+	padding-top: 20px;
+	}
+
+.purple {
+	background-color: lighten(spin(#09c, 50), 30);
+	padding-top: 10px;
+	}
+
+.magenta {
+	background-color: lighten(spin(#09c, 80), 30);
+	padding-top: 20px;
+	}
+
+.pink {
+	background-color: lighten(spin(#09c, 110), 30);
+	padding-top: 30px;
+	}
+
+// Lighten background
+.light1 {
+	background-color: @white10;
+	}
+.light2 {
+	background-color: @white25;
+	}
+.light3 {
+	background-color: @white50;
+	}
+.light4 {
+	background-color: @white75;
+	}
+.light5 {
+	background-color: @white90;
+	}
+
+// Darken background
+.dark1 {
+	background-color: @black10;
+	color: white;
+	}
+.dark2 {
+	background-color: @black25;
+	color: white;
+	}
+.dark3 {
+	background-color: @black50;
+	color: white;
+	}
+.dark4 {
+	background-color: @black75;
+	color: white;
+	}
+.dark5 {
+	background-color: @black90;
+	color: white;
+	}
