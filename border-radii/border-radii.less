@@ -1,0 +1,19 @@
+// Border Radius
+.border-radii(@radiusTopRight: 5px, @radiusBottomRight: 5px, @radiusBottomLeft: 5px, @radiusTopLeft: 5px) {
+		-webkit-border-top-left-radius: @radiusTopLeft;
+	   -webkit-border-top-right-radius: @radiusTopRight;
+	-webkit-border-bottom-right-radius: @radiusBottomRight;
+	 -webkit-border-bottom-left-radius: @radiusBottomLeft;
+			-moz-border-radius-topleft: @radiusTopLeft;
+		   -moz-border-radius-topright: @radiusTopRight;
+		-moz-border-radius-bottomright: @radiusBottomRight;
+		 -moz-border-radius-bottomleft: @radiusBottomLeft;
+				border-top-left-radius: @radiusTopLeft;
+			   border-top-right-radius: @radiusTopRight;
+			border-bottom-right-radius: @radiusBottomRight;
+			 border-bottom-left-radius: @radiusBottomLeft;
+}
+
+div {
+	.border-radii(20px, 2px, 2px, 20px);
+	}
